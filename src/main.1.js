@@ -5,10 +5,8 @@ import store from './store'
 
 Vue.config.productionTip = false
 
-import prismjs from 'prismjs';
-import 'prismjs/themes/prism-solarizedlight.css'
 
-//import 'prismjs/themes/prism-coy.css'
+import 'prismjs/themes/prism.css'
 
 new Vue({
   router,

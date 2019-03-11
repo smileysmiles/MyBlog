@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/blog/">Blog Home</router-link>
+      <router-link to="/blog/">Blog Home</router-link> |
+      <router-link to="/blog/hello">Some Post</router-link>
     </div>
     <router-view/>
-    <a href="https://buttercms.com"><img src="https://cdn.buttercms.com/JSSDbrHPSnGlLUcyHTn5"></a>
   </div>
 </template>
 
