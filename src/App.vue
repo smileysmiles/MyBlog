@@ -1,11 +1,14 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/blog/">Blog Home</router-link>
-    </div>
-    <router-view/>
-    <a href="https://buttercms.com"><img src="https://cdn.buttercms.com/JSSDbrHPSnGlLUcyHTn5"></a>
-  </div>
+    <v-app>
+      <v-navigation-drawer app></v-navigation-drawer>
+        <v-toolbar app></v-toolbar>
+          <v-content>
+            <v-container fluid>
+              <router-view></router-view>
+            </v-container>
+          </v-content>
+        <v-footer app><a href="https://buttercms.com"><img class="butterlink"  src="https://cdn.buttercms.com/JSSDbrHPSnGlLUcyHTn5"></a></v-footer>
+    </v-app>
 </template>
 
 <style>
@@ -27,5 +30,10 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.butterlink{
+  height:20%;
+  width:20%;
 }
 </style>
